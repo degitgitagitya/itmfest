@@ -16,5 +16,14 @@ class MNews extends CI_Model
         return $response;
     }
 
+    public function getById($id){
+
+        $this->db->where('id',$id);
+        $response = $this->db->get('news')->result();
+
+        return $response;
+
+    }
+
 
 }

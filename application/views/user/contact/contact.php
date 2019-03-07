@@ -16,7 +16,7 @@
     <meta name="description" content="Conference project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/styles/bootstrap4/bootstrap.min.css">
-    <link href="<?php echo base_url() ?>public/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/plugins/font-awesome-4.7.0/css/font-awesome.min.css" >
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/plugins/OwlCarousel2-2.2.1/animate.css">
@@ -51,6 +51,15 @@
             <li class="menu_item"><a href="<?php echo base_url('contact') ?>">Contact</a></li>
             <?php if (isset($_SESSION['login'])){ ?>
 
+                <li class="menu_item"><a href="<?php echo base_url('Profile')?>">Profile</a></li>
+
+            <?php } else {?>
+
+                <li class="menu_item"><a href="<?php echo base_url('Login/register')?>">Register</a></li>
+
+            <?php } ?>
+            <?php if (isset($_SESSION['login'])){ ?>
+
                 <li class="menu_item"><a href="<?php echo base_url('Home/logout')?>">Log Out</a></li>
 
             <?php } else {?>
@@ -75,8 +84,8 @@
 <!-- Home -->
 
 <div class="home">
-    <!-- <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/images/index.jpg)"></div> -->
-    <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>public/images/index.jpg" data-speed="0.8"></div>
+    <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/images/index.jpg)"></div>
+    <!--<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php /*echo base_url() */?>public/images/index.jpg" data-speed="0.8"></div>-->
 
     <!-- Header -->
 
@@ -143,7 +152,7 @@
 
                                             <?php if (isset($_SESSION['login'])){ ?>
 
-                                                <div class="button header_button"><a href="#">Profile</a></div>
+                                                <div class="button header_button"><a href="<?php echo base_url('Profile')?>">Profile</a></div>
 
                                             <?php } else {?>
 

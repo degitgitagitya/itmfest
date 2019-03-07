@@ -16,7 +16,7 @@
     <meta name="description" content="Conference project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/styles/bootstrap4/bootstrap.min.css">
-    <link href="<?php echo base_url() ?>public/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/plugins/font-awesome-4.7.0/css/font-awesome.min.css" >
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/plugins/OwlCarousel2-2.2.1/animate.css">
@@ -53,6 +53,15 @@
                 <li class="menu_item"><a href="<?php echo base_url('contact') ?>">Contact</a></li>
                 <?php if (isset($_SESSION['login'])){ ?>
 
+                    <li class="menu_item"><a href="<?php echo base_url('Profile')?>">Profile</a></li>
+
+                <?php } else {?>
+
+                    <li class="menu_item"><a href="<?php echo base_url('Login/register')?>">Register</a></li>
+
+                <?php } ?>
+                <?php if (isset($_SESSION['login'])){ ?>
+
                     <li class="menu_item"><a href="<?php echo base_url('Home/logout')?>">Log Out</a></li>
 
                 <?php } else {?>
@@ -77,8 +86,8 @@
     <!-- Home -->
 
     <div class="home">
-        <!-- <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/images/index.jpg)"></div> -->
-        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>public/images/index.jpg" data-speed="0.8"></div>
+         <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/images/index.jpg)"></div>
+        <!--<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php /*echo base_url() */?>public/images/index.jpg" data-speed="0.8"></div>-->
 
         <!-- Header -->
 
@@ -145,7 +154,7 @@
 
                                                 <?php if (isset($_SESSION['login'])){ ?>
 
-                                                    <div class="button header_button"><a href="#">Profile</a></div>
+                                                    <div class="button header_button"><a href="<?php echo base_url('Profile')?>">Profile</a></div>
 
                                                 <?php } else {?>
 
@@ -170,11 +179,11 @@
                 <div class="row">
                     <div class="col">
                         <div class="home_content d-flex flex-row align-items-end justify-content-start">
-                            <div class="current_page">Speakers</div>
+                            <div class="current_page">About</div>
                             <div class="breadcrumbs ml-auto">
                                 <ul>
                                     <li><a href="<?php echo base_url()?>">Home</a></li>
-                                    <li>Speakers</li>
+                                    <li>About</li>
                                 </ul>
                             </div>
                         </div>
@@ -196,7 +205,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
-                        <div class="speaker_title">ITM Fest 2019</div>
+                        <div class="speaker_title">ITM Festival 2019</div>
                         <div class="speaker_text">
                             <p>ITMFest 2019 merupakan festival kelima dalam event tahunan yang dilaksanakan oleh
                                 mahasiswa semester 4 Manajemen Pemarasan Pariwisata, Universitas Pendidikan Indonesia.
@@ -213,7 +222,7 @@
             <div class="row row-lg-eq-height">
                 <div class="col-lg-6 order-lg-1 order-2">
                     <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
-                        <div class="speaker_title">ITM Fest 2019</div>
+                        <div class="speaker_title">ITM Festival 2019</div>
                         <div class="speaker_text">
                             <p>ITMFest 2019 akan dilaksanakan selama 4 hari, yaitu pada tanggal 24 hingga 27 April
                                 2019. Festival ini akan digelar di Gedung Ahmad Sanusi UPI dan Bandung Creative Hub.
@@ -237,7 +246,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
-                        <div class="speaker_title">ITM Fest 2019</div>
+                        <div class="speaker_title">ITM Festival 2019</div>
                         <div class="speaker_text">
                             <p>Selain beberapa acara diatas, ITMFest 2019 juga didukung oleh adanya bazaar makanan
                                 dan minuman yang digelar disekitaran Gedung Ahmad Sanusi UPI, yang dapat dikunjungi
@@ -246,7 +255,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
     </div>
