@@ -5,6 +5,7 @@
  * Date: 3/7/2019
  * Time: 3:43 PM
  */
+
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +24,21 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/styles/news.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/styles/news_responsive.css">
     <link rel="icon" href="<?php echo base_url() ?>public/images/logo.png">
+
+
+    <?php
+
+        if (isset($sukses)){
+
+
+            echo "<script type='application/javascript'>alert('$sukses')</script>";
+
+
+        }
+
+
+    ?>
+
 </head>
 <body>
 
@@ -134,7 +150,7 @@
     <!-- Home -->
 
     <div class="home">
-         <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/images/index.jpg)"></div>
+        <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/uploads/<?php echo $gambar[0]->nama?>)"></div>
         <!--<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php /*echo base_url() */?>public/images/index.jpg" data-speed="0.8"></div>-->
 
         <!-- Header -->
@@ -318,17 +334,52 @@
                     <?php if ($user[0]->event1 == 0){ ?>
 
                         <h3 style="color: red;">Status : Belum Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk prosedur pembayaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank" href="<?php echo base_url()?>public/prosedur/REGISTRATION FLOW PUTRA PUTRI PRAJA PARIWISATA 2019.pdf">Klik disini untuk prosedur pembayaran</a></h4>
+                        <p>Upload Bukti Pembayaran (file jpg)</p>
+                        <?php if (isset($errorevent1)){?>
+                            <?php echo $errorevent1 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event1" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event1 == 1){ ?>
 
                         <h3 style="color: blue;">Status : Sudah Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank"  href="<?php echo base_url()?>public/form/FORM_REGISTRASI_PPPP.docx">">Klik disini untuk download form pendaftaran</a></h4>
+                        <p>Upload Form Pendaftaran (file pdf)</p>
+                        <?php if (isset($errorevent1)){?>
+                            <?php echo $errorevent1 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload2');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event1" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event1 == 2){ ?>
 
                         <h3 style="color: green;">Status : Sudah Melakukan Pendaftaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
 
                     <?php }?>
 
@@ -355,17 +406,52 @@
                     <?php if ($user[0]->event2 == 0){ ?>
 
                         <h3 style="color: red;">Status : Belum Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk prosedur pembayaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank" href="<?php echo base_url()?>public/prosedur/REGISTRATION FLOW SEMINAR NASIONAL.pdf">Klik disini untuk prosedur pembayaran</a></h4>
+                        <p>Upload Bukti Pembayaran (file jpg)</p>
+                        <?php if (isset($errorevent2)){?>
+                            <?php echo $errorevent2 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event2" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event2 == 1){ ?>
 
                         <h3 style="color: blue;">Status : Sudah Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank"  href="<?php echo base_url()?>public/form/FORM_REGISTRATION_SEMINAR_NASIONAL.docx">Klik disini untuk download form pendaftaran</a></h4>
+                        <p>Upload Form Pendaftaran (file pdf)</p>
+                        <?php if (isset($errorevent2)){?>
+                            <?php echo $errorevent2 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload2');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event2" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event2 == 2){ ?>
 
                         <h3 style="color: green;">Status : Sudah Melakukan Pendaftaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
 
                     <?php }?>
 
@@ -392,17 +478,53 @@
                     <?php if ($user[0]->event3 == 0){ ?>
 
                         <h3 style="color: red;">Status : Belum Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk prosedur pembayaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank" href="<?php echo base_url()?>public/prosedur/REGISTRATION FLOW PESONA INDONESIA COVER SONG COMPETITION.pdf">Klik disini untuk prosedur pembayaran</a></h4>
+                        <p>Upload Bukti Pembayaran (file jpg)</p>
+                        <?php if (isset($errorevent3)){?>
+                            <?php echo $errorevent3 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event3" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event3 == 1){ ?>
 
                         <h3 style="color: blue;">Status : Sudah Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank"  href="<?php echo base_url()?>public/form/FORM_REGISTRATION_COVER_SONG_COMPETITION.docx">Klik disini untuk download form pendaftaran</a></h4>
+                        <p>Upload Form Pendaftaran (file pdf)</p>
+                        <?php if (isset($errorevent3)){?>
+                            <?php echo $errorevent3 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload3');?>
+
+                        <input type="file" class="form-control-file" name="userfile" size="20" />
+
+                        <input type="text" value="event3" name="event" hidden>
+                        <input type="text" class="form-control-sm" name="linklagu" placeholder="Masukan Link Youtube">
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event3 == 2){ ?>
 
                         <h3 style="color: green;">Status : Sudah Melakukan Pendaftaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
 
                     <?php }?>
 
@@ -429,17 +551,52 @@
                     <?php if ($user[0]->event4 == 0){ ?>
 
                         <h3 style="color: red;">Status : Belum Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk prosedur pembayaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank" href="<?php echo base_url()?>public/prosedur/REGISTRATION FLOW BUSINESS MODEL CANVAS (BMC) COMPETITION.pdf">Klik disini untuk prosedur pembayaran</a></h4>
+                        <p>Upload Bukti Pembayaran (file jpg)</p>
+                        <?php if (isset($errorevent4)){?>
+                            <?php echo $errorevent4 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event4" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event4 == 1){ ?>
 
                         <h3 style="color: blue;">Status : Sudah Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank"  href="<?php echo base_url()?>public/form/FORM_REGISTRATION_BMC_COMPETITION.docx">Klik disini untuk download form pendaftaran</a></h4>
+                        <p>Upload Form Pendaftaran (file pdf)</p>
+                        <?php if (isset($errorevent4)){?>
+                            <?php echo $errorevent4 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload2');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event4" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event4 == 2){ ?>
 
                         <h3 style="color: green;">Status : Sudah Melakukan Pendaftaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
 
                     <?php }?>
 
@@ -466,17 +623,52 @@
                     <?php if ($user[0]->event5 == 0){ ?>
 
                         <h3 style="color: red;">Status : Belum Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk prosedur pembayaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank" href="<?php echo base_url()?>public/prosedur/REGISTRATION FLOW PHOTOGRAPHY COMPETITION.pdf">Klik disini untuk prosedur pembayaran</a></h4>
+                        <p>Upload Bukti Pembayaran (file jpg)</p>
+                        <?php if (isset($errorevent5)){?>
+                            <?php echo $errorevent5 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event5" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event5 == 1){ ?>
 
                         <h3 style="color: blue;">Status : Sudah Melakukan Pembayaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
+                        <h4 style="color: yellow;"><a download target="_blank"  href="<?php echo base_url()?>public/form/FORM_REGISTRATION_PHOTOGRAPHY_COMPETITION.docx">Klik disini untuk download form pendaftaran</a></h4>
+                        <p>Upload Form Pendaftaran (file pdf)</p>
+                        <?php if (isset($errorevent5)){?>
+                            <?php echo $errorevent5 ;?>
+                        <?php }?>
+
+                        <?php echo form_open_multipart('UploadUser/do_upload2');?>
+
+                        <input type="file" name="userfile" size="20" />
+
+                        <input type="text" value="event5" name="event" hidden>
+                        <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
+                        <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
+
+                        <br /><br />
+
+                        <input type="submit" class="btn btn-success" value="upload" />
+
+                        </form>
 
                     <?php }elseif ($user[0]->event5 == 2){ ?>
 
                         <h3 style="color: green;">Status : Sudah Melakukan Pendaftaran</h3>
-                        <h4 style="color: yellow;"><a href="">Klik disini untuk download form pendaftaran</a></h4>
 
                     <?php }?>
 

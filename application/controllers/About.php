@@ -11,7 +11,9 @@ class About extends CI_Controller
 
     public function index(){
 
-        $this->load->view('user/about/about');
+        $data['gambar'] = $this->MGambarHome->getGambar();
+
+        $this->load->view('user/about/about', $data);
         $this->load->view('user/footer');
 
     }

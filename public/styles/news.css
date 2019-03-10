@@ -42,7 +42,7 @@ body
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #FFFFFF;
+	background: #fff8ef;
 	color: #a5a5a5;
 }
 div
@@ -107,7 +107,7 @@ p a:active
 }
 p a:hover
 {
-	color: #FFFFFF;
+	color: #ffffff;
 	background: #ffa07f;
 }
 p a:hover::after
@@ -117,7 +117,7 @@ p a:hover::after
 ::selection
 {
 	background: #AEBC4B;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 p::selection
 {
@@ -301,7 +301,7 @@ section
 	line-height: 52px;
 	font-size: 14px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	z-index: 1;
 }
 .button:hover::before
@@ -327,7 +327,7 @@ section
 	padding-right: 46px;
 	font-size: 14px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	line-height: 52px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -391,14 +391,14 @@ section
 .menu_logo .logo_text,
 .menu_logo .logo_sub
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .menu_item a
 {
 	display: inline-block;
 	position: relative;
 	font-size: 30px;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-weight: 500;
 }
 .menu_item a::after
@@ -409,7 +409,7 @@ section
 	left: 0;
 	width: 0;
 	height: 4px;
-	background: #FFFFFF;
+	background: #fff8ef;
 	letter-spacing: 2px;
 	content: '';
 	z-index: 10;
@@ -443,7 +443,7 @@ section
 	top: 9px;
 	width: 21px;
 	height: 3px;
-	background: #FFFFFF;
+	background: #fff8ef;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -459,7 +459,7 @@ section
 	content: '';
 	width: 3px;
 	height: 21px;
-	background: #FFFFFF;
+	background: #fff8ef;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -514,7 +514,7 @@ section
 }
 .menu_social ul li a i:hover
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 /*********************************
@@ -548,7 +548,7 @@ section
 {
 	font-size: 60px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	line-height: 0.75;
 }
 .breadcrumbs
@@ -561,7 +561,7 @@ section
 	position: relative;
 	font-size: 16px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .breadcrumbs ul li:not(:last-child)::after
 {
@@ -583,7 +583,7 @@ section
 }
 .breadcrumbs ul li a:hover
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 /*********************************
@@ -596,7 +596,7 @@ section
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #FFFFFF;
+	background: #fff8ef;
 	z-index: 100;
 }
 .header.scrolled
@@ -786,7 +786,7 @@ section
 .main_nav ul li a:hover,
 .main_nav ul li.active a
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .search_container
 {
@@ -872,7 +872,7 @@ section
 .news
 {
 	width: 100%;
-	background: #FFFFFF;
+	background: #fff8ef;
 	padding-top: 57px;
 	padding-bottom: 115px;
 }
@@ -918,14 +918,14 @@ section
 {
 	font-size: 30px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	line-height: 0.75;
 }
 .date_month
 {
 	font-size: 18px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	line-height: 0.75;
 	margin-top: 10px;
 }
@@ -1076,7 +1076,7 @@ section
 	border: solid 1px #e7e8ea;
 	background: rgba(3, 8, 20, 0.83);
 	padding-top: 50px;
-	color: #FFFFFF;
+	color: #ffffff;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 56px;
@@ -1222,7 +1222,7 @@ section
 .cta_title
 {
 	font-size: 48px;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-weight: 400;
 }
 .cta_button
@@ -1239,7 +1239,7 @@ section
 .footer
 {
 	width: 100%;
-	background: #0c081d;	
+	background: #8b0000;	
 }
 .footer_content
 {

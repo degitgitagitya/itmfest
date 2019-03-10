@@ -88,7 +88,7 @@
     <!-- Home -->
 
     <div class="home">
-        <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/images/index.jpg)"></div>
+        <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/uploads/<?php echo $gambar[0]->nama?>)"></div>
         <!--<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php /*echo base_url() */?>public/images/index.jpg" data-speed="0.8"></div>-->
 
         <!-- Header -->

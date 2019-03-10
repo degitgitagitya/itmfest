@@ -86,7 +86,7 @@
     <!-- Home -->
 
     <div class="home">
-         <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/images/index.jpg)"></div>
+         <div class="home_background" style="background-image: url(<?php echo base_url() ?>public/uploads/<?php echo $gambar[0]->nama?>)"></div>
         <!--<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php /*echo base_url() */?>public/images/index.jpg" data-speed="0.8"></div>-->
 
         <!-- Header -->
@@ -205,7 +205,6 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
-                        <div class="speaker_title">ITM Festival 2019</div>
                         <div class="speaker_text">
                             <p>ITMFest 2019 merupakan festival kelima dalam event tahunan yang dilaksanakan oleh
                                 mahasiswa semester 4 Manajemen Pemarasan Pariwisata, Universitas Pendidikan Indonesia.
@@ -222,7 +221,6 @@
             <div class="row row-lg-eq-height">
                 <div class="col-lg-6 order-lg-1 order-2">
                     <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
-                        <div class="speaker_title">ITM Festival 2019</div>
                         <div class="speaker_text">
                             <p>ITMFest 2019 akan dilaksanakan selama 4 hari, yaitu pada tanggal 24 hingga 27 April
                                 2019. Festival ini akan digelar di Gedung Ahmad Sanusi UPI dan Bandung Creative Hub.
@@ -246,7 +244,6 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
-                        <div class="speaker_title">ITM Festival 2019</div>
                         <div class="speaker_text">
                             <p>Selain beberapa acara diatas, ITMFest 2019 juga didukung oleh adanya bazaar makanan
                                 dan minuman yang digelar disekitaran Gedung Ahmad Sanusi UPI, yang dapat dikunjungi

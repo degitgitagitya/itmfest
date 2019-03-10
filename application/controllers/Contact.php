@@ -11,7 +11,9 @@ class Contact extends CI_Controller
 
     public function index(){
 
-        $this->load->view('user/contact/contact');
+        $data['gambar'] = $this->MGambarHome->getGambar();
+
+        $this->load->view('user/contact/contact', $data);
         $this->load->view('user/footer');
 
     }

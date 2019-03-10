@@ -14,6 +14,7 @@ class Profile extends CI_Controller
         if (isset($_SESSION['login'])){
 
             $data['user'] = $this->User->getByEmail($_SESSION['email']);
+            $data['gambar'] = $this->MGambarHome->getGambar();
             $this->load->view('user/profile/profile', $data);
             $this->load->view('user/footer');
 

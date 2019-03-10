@@ -24,6 +24,15 @@ class User extends CI_Model{
 
     }
 
+    public function getById($id){
+
+        $this->db->where('id', $id);
+        $response = $this->db->get('user')->result();
+
+        return $response;
+
+    }
+
     public function getUser($email,$password){
 
         $this->db->where('email', $email);
@@ -31,6 +40,46 @@ class User extends CI_Model{
         $response = $this->db->get('user')->result();
 
         return $response;
+    }
+
+    public function getAll(){
+
+        return $this->db->get('user')->result();
+
+    }
+
+    public function changeStatusEvent($id, $event, $status){
+
+        $this->db->where('id', $id);
+        $this->db->set($event,$status);
+        $this->db->update('user');
+
+    }
+
+    public function editPembayaranAttachment($id,$event,$nama){
+
+
+        $this->db->where('id', $id);
+        $this->db->set('pembayaran'.$event,$nama);
+        $this->db->update('user');
+
+
+    }
+
+    public function editAttachment($id, $event, $nama){
+
+        $this->db->where('id', $id);
+        $this->db->set('attachment'.$event,$nama);
+        $this->db->update('user');
+
+    }
+
+    public function editLinkLagu($id, $nama){
+
+        $this->db->where('id', $id);
+        $this->db->set('linklagu',$nama);
+        $this->db->update('user');
+
     }
 
 

@@ -25,5 +25,18 @@ class MNews extends CI_Model
 
     }
 
+    public function insertBerita($berita){
+
+        $this->db->insert('news', $berita);
+
+    }
+
+    public function deleteBerita($id){
+
+        $this->db->where('id',$id);
+        $this->db->delete('news');
+
+    }
+
 
 }

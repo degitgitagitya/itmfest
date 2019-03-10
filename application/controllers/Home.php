@@ -5,7 +5,9 @@ class Home extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('user/home/home');
+        $data['gambar'] = $this->MGambarHome->getGambar();
+
+        $this->load->view('user/home/home', $data);
         $this->load->view('user/footer');
     }
 

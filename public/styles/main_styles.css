@@ -43,7 +43,7 @@ body
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #FFFFFF;
+	background: #fff8ef;
 	color: #a5a5a5;
 }
 div
@@ -108,7 +108,7 @@ p a:active
 }
 p a:hover
 {
-	color: #FFFFFF;
+	color: #ffffff;
 	background: #ffa07f;
 }
 p a:hover::after
@@ -118,7 +118,7 @@ p a:hover::after
 ::selection
 {
 	background: #AEBC4B;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 p::selection
 {
@@ -286,7 +286,7 @@ section
 	line-height: 52px;
 	font-size: 14px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	z-index: 1;
 }
 .button:hover::before
@@ -341,14 +341,14 @@ section
 .menu_logo .logo_text,
 .menu_logo .logo_sub
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .menu_item a
 {
 	display: inline-block;
 	position: relative;
 	font-size: 30px;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-weight: 500;
 }
 .menu_item a::after
@@ -359,7 +359,7 @@ section
 	left: 0;
 	width: 0;
 	height: 4px;
-	background: #FFFFFF;
+	background: #fff8ef;
 	letter-spacing: 2px;
 	content: '';
 	z-index: 10;
@@ -393,7 +393,7 @@ section
 	top: 9px;
 	width: 21px;
 	height: 3px;
-	background: #FFFFFF;
+	background: #fff8ef;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -409,7 +409,7 @@ section
 	content: '';
 	width: 3px;
 	height: 21px;
-	background: #FFFFFF;
+	background: #fff8ef;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -464,7 +464,7 @@ section
 }
 .menu_social ul li a i:hover
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 /*********************************
@@ -502,13 +502,13 @@ section
 {
 	font-size: 18px;
 	font-weight: 700;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .home_title
 {
 	font-size: 60px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	margin-top: -5px;
 	line-height: 1.2;
 }
@@ -516,14 +516,14 @@ section
 {
 	font-size: 36px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	margin-top: -13px;
 }
 .home_text
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ffffff;
 	line-height: 2.14;
 	margin-top: 4px;
 }
@@ -550,7 +550,7 @@ section
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #FFFFFF;
+	background: #fff8ef;
 	z-index: 100;
 }
 .header.scrolled
@@ -740,7 +740,7 @@ section
 .main_nav ul li a:hover,
 .main_nav ul li.active a
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .search_container
 {
@@ -826,7 +826,7 @@ section
 .intro
 {
 	width: 100%;
-	background: #FFFFFF;
+	background: #fff8ef;
 	padding-top: 115px;
 	padding-bottom: 67px;
 	padding-left: 144px;
@@ -891,7 +891,7 @@ section
 .intro_item:hover .intro_title a,
 .intro_item:hover .intro_subtitle
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .intro_subtitle
 {
@@ -921,7 +921,7 @@ section
 .pricing_section_title
 {
 	font-size: 48px;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .pricing_row
 {
@@ -933,7 +933,7 @@ section
 	padding-top: 57px;
 	padding-bottom: 70px;
 	text-align: center;
-	background: #FFFFFF;
+	background: #fff8ef;
 }
 .pricing_item_content
 {
@@ -976,7 +976,7 @@ section
 }
 .pricing_item_mid .pricing_level
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .pricing_item_mid .pricing_level
 {
@@ -991,7 +991,7 @@ section
 }
 .pricing_item_mid .pricing_price
 {
-	color: #FFFFFF;
+	color: #ffffff;
 	margin-top: 32px;
 }
 .pricing_price span
@@ -1014,7 +1014,7 @@ section
 }
 .pricing_item_mid .pricing_list li
 {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .pricing_list li:not(:last-child)
 {
@@ -1051,7 +1051,7 @@ section
 {
 	display: block;
 	position: relative;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .pricing_button
 {
@@ -1063,7 +1063,7 @@ section
 }
 .pricing_item_mid .pricing_button
 {
-	background: #FFFFFF;
+	background: #fff8ef;
 }
 .pricing_item_mid .pricing_button::before
 {
@@ -1083,7 +1083,7 @@ section
 .calendar
 {
 	width: 100%;
-	background: #FFFFFF;
+	background: #fff8ef;
 	padding-top: 115px;
 	padding-bottom: 111px;
 	padding-left: 141px;
@@ -1118,7 +1118,7 @@ section
 	font-size: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: #ffffff;
 	margin-left: 19px;
 }
 .calendar_items
@@ -1203,7 +1203,7 @@ section
 .cta_title
 {
 	font-size: 48px;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-weight: 400;
 }
 .cta_button
@@ -1220,7 +1220,7 @@ section
 .footer
 {
 	width: 100%;
-	background: #0c081d;	
+	background: #8b0000;	
 }
 .footer_content
 {
