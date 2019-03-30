@@ -222,7 +222,7 @@
                 <div class="col-lg-6 order-lg-1 order-2">
                     <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
                         <div class="speaker_text">
-                            <p>ITMFest 2019 akan dilaksanakan selama 4 hari, yaitu pada tanggal 24 hingga 27 April
+                            <p>ITMFest 2019 akan dilaksanakan selama 4 hari, yaitu pada tanggal 29 April hingga 2 Mei
                                 2019. Festival ini akan digelar di Gedung Ahmad Sanusi UPI dan Bandung Creative Hub.
                                 Tujuan diadakannya acara ini adalah untuk memenuhi tugas mata kuliah Manajemen Event serta
                                 untuk mempertemukan insan pariwisata Indonesia dalam suatu event nasional. Tujuan lainnya

@@ -580,11 +580,14 @@
                             <?php echo $errorevent4 ;?>
                         <?php }?>
 
-                        <?php echo form_open_multipart('UploadUser/do_upload2');?>
+                        <?php echo form_open_multipart('UploadUser/do_upload7');?>
 
                         <input type="file" name="userfile" size="20" />
 
                         <input type="text" value="event4" name="event" hidden>
+                        <br>
+                        <p>Canvas dimasukan ke dalam Google Drive dan cantumkan akses link pada kolom di bawah ini</p>
+                        <input type="text" class="form-control-sm" name="linkcanvas" placeholder="Masukan Link Canvas">
                         <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
                         <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
 
@@ -652,11 +655,14 @@
                             <?php echo $errorevent5 ;?>
                         <?php }?>
 
-                        <?php echo form_open_multipart('UploadUser/do_upload2');?>
+                        <?php echo form_open_multipart('UploadUser/do_upload6');?>
 
                         <input type="file" name="userfile" size="20" />
 
                         <input type="text" value="event5" name="event" hidden>
+                        <br>
+                        <p>Karya dimasukan ke dalam Google Drive dan cantumkan akses link pada kolom di bawah ini</p>
+                        <input type="text" class="form-control-sm" name="fotolomba" placeholder="Masukan Link Karya">
                         <input type="text" value="<?php echo $user[0]->email?>" name="email" hidden>
                         <input type="text" value="<?php echo $user[0]->id?>" name="id" hidden>
 

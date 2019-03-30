@@ -100,8 +100,7 @@ class Login extends CI_Controller
                     "event2" => 0,
                     "event3" => 0,
                     "event4" => 0,
-                    "event5" => 0,
-                    "event6" => 0
+                    "event5" => 0
 
                 );
 

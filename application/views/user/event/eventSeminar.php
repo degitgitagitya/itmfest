@@ -18,7 +18,7 @@
                     <div class="row row-lg-eq-height">
                         <div class="col-lg-6 event_col">
                             <div class="event_image_container">
-                                <div class="background_image" style="background-image:url(<?php echo base_url()?>public/images/event_2.jpg)"></div>
+                                <div class="background_image" style="background-image:url(<?php echo base_url()?>public/banner/Seminar-Web.jpg)"></div>
                             </div>
                         </div>
                         <div class="col-lg-6 event_col">
@@ -32,6 +32,7 @@
                                 <br>
                                 <br>
                                 <br>
+                                <a href="<?php echo base_url('Event/check') ?>" class="btn btn-dark">Register</a>
                             </div>
                         </div>
                     </div>
@@ -103,8 +104,8 @@
 
             <div class="col-6 text-center">
 
-                <h3>Pembayaran Registrasi setiap konten lomba ke No. Rekening 055216700 Bank BNI
-                    An. Rafika Dwi Astari
+                <h3>Pembayaran Registrasi setiap konten lomba ke No. Rekening 0734764814 Bank BNI Syariah
+                    An. Maulida K T
 
                 </h3>
 

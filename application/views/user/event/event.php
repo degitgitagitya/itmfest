@@ -22,7 +22,7 @@
                         <div class="row row-lg-eq-height">
                             <div class="col-lg-6 event_col">
                                 <div class="event_image_container">
-                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/images/event_1.jpg)"></div>
+                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/banner/PPPP-Web.jpg)"></div>
                                 </div>
                             </div>
                             <div class="col-lg-6 event_col">
@@ -51,7 +51,7 @@
                         <div class="row row-lg-eq-height">
                             <div class="col-lg-6 event_col">
                                 <div class="event_image_container">
-                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/images/event_2.jpg)"></div>
+                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/banner/Seminar-Web.jpg)"></div>
                                 </div>
                             </div>
                             <div class="col-lg-6 event_col">
@@ -75,21 +75,70 @@
                         <div class="row row-lg-eq-height">
                             <div class="col-lg-6 event_col">
                                 <div class="event_image_container">
-                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/images/event_9.jpg)"></div>
+                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/banner/Cover-Song-Web.jpg)"></div>
                                     <div class="date_container">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 event_col">
                                 <div class="event_content">
-                                    <div class="event_title">Kompetisi Pariwisata</div>
+                                    <div class="event_title">Pesona Indonesia Cover Song Competition</div>
                                     <div class="event_location">@ Online</div>
                                     <div class="event_text">
-                                        <p>Lomba-lomba bertemakan “Coffee Tourism” merupakan kegiatan perlombaan yang terdiri dari Cover Song Competition Pesona Indonesia, Business Modal Canvas (BMC) Competition, dan Photography Competition. Dengan diadakannya rangkaian perlombaan ini, diharapkan peserta dapat memunculkan dan mengembangkan kreativitasnya. Kegiatan ini akan diadakan sebelum Grand Final PPPP dengan berbasis online. Dan pengumuman pemenang akan diumumkan saat Grand Final PPPP tanggal 2 Mei 2019.
-                                        </p>
+                                        <p>Cover Song ialah salah satu bagian dari lomba ITM Fest yang berlandaskan bidang tarik suara dengan berbasis lagu “Pesona Indonesia” yang bertujuan untuk menggali kekreativitasan tiap kontestan dan mempromosikan lagu tersebut.</p>
                                     </div>
                                     <div class="event_buttons">
                                         <div class="button_2 event_button event_button_2"><a href="<?php echo base_url('Event/eventDetailKompetisiPariwisata') ?>">Read more</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event -->
+                    <div class="event">
+                        <div class="row row-lg-eq-height">
+                            <div class="col-lg-6 event_col">
+                                <div class="event_image_container">
+                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/banner/BMC-Web.jpg)"></div>
+                                    <div class="date_container">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 event_col">
+                                <div class="event_content">
+                                    <div class="event_title">Business Model Canvas (BMC) Competition</div>
+                                    <div class="event_location">@ Online</div>
+                                    <div class="event_text">
+                                        <p>Bisnis Model Canvas (BMC) adalah suatu kerangka yang membahas model bisnis dengan bentuk visual, yang memiliki tujuan agar mudah dimengerti dan dipahami. Model ini digunakan untuk menjelaskan, memvisualisasikan, menilai dan merubah suatu model bisnis agar mampu menghasilkan kinerja yang optimal </p>
+                                    </div>
+                                    <div class="event_buttons">
+                                        <div class="button_2 event_button event_button_2"><a href="<?php echo base_url('Event/eventDetailBMC') ?>">Read more</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event -->
+                    <div class="event">
+                        <div class="row row-lg-eq-height">
+                            <div class="col-lg-6 event_col">
+                                <div class="event_image_container">
+                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/banner/Photography-Web.jpg)"></div>
+                                    <div class="date_container">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 event_col">
+                                <div class="event_content">
+                                    <div class="event_title">Photography Competition</div>
+                                    <div class="event_location">@ Online</div>
+                                    <div class="event_text">
+                                        <p>Photograpy ialah salah satu bagian dari lomba ITM Fest yang bertujuan untuk memunculkan potensi dari tiap kontestan terutama di bagian pesona Indonesia dan coffee tourism. Peserta dalam lomba ini diberikan kebebasan untuk mengeksplor bakatnya dengan cakupan tema yang luas. Agar keindahan yang di dapat menjadi maksimal.</p>
+                                    </div>
+                                    <div class="event_buttons">
+                                        <div class="button_2 event_button event_button_2"><a href="<?php echo base_url('Event/eventDetailPhoto') ?>">Read more</a></div>
                                     </div>
                                 </div>
                             </div>

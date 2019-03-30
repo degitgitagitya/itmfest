@@ -29,7 +29,7 @@
                         <div class="row row-lg-eq-height">
                             <div class="col-lg-6 event_col">
                                 <div class="event_image_container">
-                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/images/event_1.jpg)"></div>
+                                    <div class="background_image" style="background-image:url(<?php echo base_url()?>public/banner/PPPP-Web.jpg)"></div>
                                 </div>
                             </div>
                             <div class="col-lg-6 event_col">
@@ -43,6 +43,9 @@
                                         </p>
                                         <br><br><br>
                                     </div>
+
+                                    <a download target="_blank" href="<?php echo base_url() ?>public/guide/GUIDE BOOK PUTRA PUTRI PRAJA PARIWISATA 2019.pdf" class="btn btn-success">Unduh Guide Book</a>
+                                    <a href="<?php echo base_url('Event/check') ?>" class="btn btn-dark">Register</a>
                                 </div>
                             </div>
                         </div>

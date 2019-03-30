@@ -275,6 +275,18 @@
                                 <?php } ?>
 
                             </p>
+
+                            Canvas :
+
+                            <?php if ($user[0]->linkcanvas == null){ ?>
+
+                                -
+
+                            <?php }else { ?>
+
+                                <a target="_blank" class="btn btn-warning" href="<?php echo $user[0]->linkcanvas?>">Link</a>
+
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -337,6 +349,21 @@
 
                                 <?php } ?>
 
+                            </p>
+
+                            <p>
+
+                                Foto Lomba :
+
+                                <?php if ($user[0]->fotolomba == null){ ?>
+
+                                    -
+
+                                <?php }else { ?>
+
+                                    <a target="_blank" class="btn btn-warning" href="<?php echo $user[0]->fotolomba?>">Link</a>
+
+                                <?php } ?>
                             </p>
                         </div>
                     </div>

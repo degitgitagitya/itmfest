@@ -171,7 +171,27 @@ class Admin extends CI_Controller
 
         header('Location: ' . base_url('Admin/news'));
 
+    }
 
+    public function competition($event){
+        if (isset($_SESSION['admin'])){
+
+            $data['users'] = $this->User->getByLomba($event);
+            $data['event'] = $event;
+
+            $this->load->view('admin/dashboard/header');
+            $this->load->view('admin/dashboard/dashboardcompetition', $data);
+            $this->load->view('admin/dashboard/footer');
+
+        }else {
+
+            $data['error'] = "Silahkan login";
+
+            $this->load->view('admin/login/header');
+            $this->load->view('admin/login/login2', $data);
+            $this->load->view('admin/login/footer');
+
+        }
     }
 
 }

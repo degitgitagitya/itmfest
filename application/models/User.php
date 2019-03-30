@@ -82,5 +82,30 @@ class User extends CI_Model{
 
     }
 
+    public function editFotoLomba($id, $nama){
+
+        $this->db->where('id', $id);
+        $this->db->set('fotolomba',$nama);
+        $this->db->update('user');
+
+    }
+
+    public function editLinkCanvas($id, $nama){
+
+        $this->db->where('id', $id);
+        $this->db->set('linkcanvas',$nama);
+        $this->db->update('user');
+
+    }
+
+    public function getByLomba($event){
+
+        $this->db->where('pembayaran'.$event.'!=','');
+        $response = $this->db->get('user')->result();
+
+        return $response;
+
+    }
+
 
 }

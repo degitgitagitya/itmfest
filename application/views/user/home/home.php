@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/styles/responsive.css">
     <link rel="icon" href="<?php echo base_url() ?>public/images/logo.png">
+    <style> .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 </head>
 <body>
 
@@ -195,58 +196,60 @@
 
     <!-- Intro -->
 
-    <!--<div class="intro">
+    <div class="intro">
         <div class="intro_content d-flex flex-row flex-wrap align-items-start justify-content-between">
 
             <div class="intro_item">
-                <div class="intro_image"><img src="<?php /*echo base_url() */?>public/images/intro_1.jpg" alt=""></div>
+                <div class="intro_image"><img src="<?php echo base_url() ?>public/banner/PPPP-Web.jpg" alt=""></div>
                 <div class="intro_body">
-                    <div class="intro_title"><a href="#">Conference Program</a></div>
-                    <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
+                    <div class="intro_title"><a href="<?php echo base_url('Event/eventDetailPPP')?>">PPPP (Putra Putri Praja Pariwisata)</a></div>
                 </div>
             </div>
 
             <div class="intro_item">
-                <div class="intro_image"><img src="<?php /*echo base_url() */?>public/images/intro_2.jpg" alt=""></div>
+                <div class="intro_image"><img src="<?php echo base_url() ?>public/banner/Seminar-Web.jpg" alt=""></div>
                 <div class="intro_body">
-                    <div class="intro_title"><a href="#">Supersessions</a></div>
-                    <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
+                    <div class="intro_title"><a href="<?php echo base_url('Event/eventDetailSeminar')?>">Seminar</a></div>
                 </div>
             </div>
 
             <div class="intro_item">
-                <div class="intro_image"><img src="<?php /*echo base_url() */?>public/images/intro_3.jpg" alt=""></div>
+                <div class="intro_image"><img src="<?php echo base_url() ?>public/banner/Cover-Song-Web.jpg" alt=""></div>
                 <div class="intro_body">
-                    <div class="intro_title"><a href="#">The Speakers</a></div>
-                    <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
+                    <div class="intro_title"><a href="<?php echo base_url('Event/eventDetailKompetisiPariwisata')?>">Pesona Indonesia Cover Song Competition</a></div>
                 </div>
             </div>
 
             <div class="intro_item">
-                <div class="intro_image"><img src="<?php /*echo base_url() */?>public/images/intro_4.jpg" alt=""></div>
+                <div class="intro_image"><img src="<?php echo base_url() ?>public/banner/BMC-Web.jpg" alt=""></div>
                 <div class="intro_body">
-                    <div class="intro_title"><a href="#">Explore Sessions</a></div>
-                    <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
+                    <div class="intro_title"><a href="<?php echo base_url('Event/eventDetailBMC')?>">Business Model Canvas (BMC) Competition</a></div>
                 </div>
             </div>
 
             <div class="intro_item">
-                <div class="intro_image"><img src="<?php /*echo base_url() */?>public/images/intro_5.jpg" alt=""></div>
+                <div class="intro_image"><img src="<?php echo base_url() ?>public/banner/Photography-Web.jpg" alt=""></div>
                 <div class="intro_body">
-                    <div class="intro_title"><a href="#">Directory</a></div>
-                    <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
-                </div>
-            </div>
-
-            <div class="intro_item">
-                <div class="intro_image"><img src="<?php /*echo base_url() */?>public/images/intro_6.jpg" alt=""></div>
-                <div class="intro_body">
-                    <div class="intro_title"><a href="#">Speakers Schedule</a></div>
-                    <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
+                    <div class="intro_title"><a href="<?php echo base_url('Event/eventDetailPhoto')?>">Photography Competition</a></div>
                 </div>
             </div>
 
         </div>
-    </div>-->
+    </div>
+
+    <!-- Call to action -->
+
+    <div class="cta">
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php /*echo base_url() */?>public/images/cta_1.jpg" data-speed="0.8"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="cta_content text-center">
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed/n1-FKu2EEkE' frameborder='0' allowfullscreen></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 

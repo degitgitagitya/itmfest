@@ -4,8 +4,21 @@
         <div class="main-content">
             <div class="section__content section__content--p30">
                 <div class="container-fluid">
+
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <a href="<?php echo base_url('Admin/Competition/event1')?>" class="btn btn-dark mb-5">PPP</a>
+                            <a href="<?php echo base_url('Admin/Competition/event2')?>" class="btn btn-dark mb-5">Seminar</a>
+                            <a href="<?php echo base_url('Admin/Competition/event3')?>" class="btn btn-dark mb-5">Cover Song</a>
+                            <a href="<?php echo base_url('Admin/Competition/event4')?>" class="btn btn-dark mb-5">BMC</a>
+                            <a href="<?php echo base_url('Admin/Competition/event5')?>" class="btn btn-dark mb-5">Photography</a>
+                            <a href="<?php echo base_url('Admin/Home')?>" class="btn btn-dark mb-5 ml-5">Semua Pendaftar</a>
+                        </div>
+                    </div>
+
                     <div class="row m-t-30">
                         <div class="col-md-12">
+
                             <!-- DATA TABLE-->
                             <div class="table-responsive m-b-40">
                                 <table class="table table-borderless table-data3">

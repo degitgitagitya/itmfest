@@ -32,6 +32,7 @@ class UploadUser extends CI_Controller {
             if (isset($_SESSION['login'])){
 
                 $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
                 $this->load->view('user/profile/profile', $data);
                 $this->load->view('user/footer');
 
@@ -52,6 +53,7 @@ class UploadUser extends CI_Controller {
             if (isset($_SESSION['login'])){
 
                 $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
                 $this->load->view('user/profile/profile', $data);
                 $this->load->view('user/footer');
 
@@ -87,6 +89,7 @@ class UploadUser extends CI_Controller {
             if (isset($_SESSION['login'])){
 
                 $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
                 $this->load->view('user/profile/profile', $data);
                 $this->load->view('user/footer');
 
@@ -107,6 +110,7 @@ class UploadUser extends CI_Controller {
             if (isset($_SESSION['login'])){
 
                 $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
                 $this->load->view('user/profile/profile', $data);
                 $this->load->view('user/footer');
 
@@ -143,6 +147,7 @@ class UploadUser extends CI_Controller {
             if (isset($_SESSION['login'])){
 
                 $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
                 $this->load->view('user/profile/profile', $data);
                 $this->load->view('user/footer');
 
@@ -165,6 +170,7 @@ class UploadUser extends CI_Controller {
             if (isset($_SESSION['login'])){
 
                 $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
                 $this->load->view('user/profile/profile', $data);
                 $this->load->view('user/footer');
 
@@ -255,6 +261,126 @@ class UploadUser extends CI_Controller {
             $this->load->view('admin/dashboard/header');
             $this->load->view('admin/dashboard/addnews', $data);
             $this->load->view('admin/dashboard/footer');
+        }
+    }
+
+    public function do_upload6()
+    {
+
+        $event = $this->input->post('event');
+        $email = $this->input->post('email');
+        $fotolomba = $this->input->post('fotolomba');
+        $id = $this->input->post('id');
+
+        $num = rand(0,10000000);
+
+
+        $config['upload_path']          = './public/uploads/';
+        $config['allowed_types']        = 'pdf';
+        $config['max_size']             = 500;
+        $config['file_name']             = 'attachment_'.$event.'_'.$id.$num.'.pdf';
+
+        $this->load->library('upload', $config);
+
+        if ( ! $this->upload->do_upload('userfile'))
+        {
+            $data = array('error'.$event => $this->upload->display_errors());
+
+            if (isset($_SESSION['login'])){
+
+                $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
+                $this->load->view('user/profile/profile', $data);
+                $this->load->view('user/footer');
+
+            }else {
+
+                header('Location: ' . base_url('Home'));
+
+            }
+        }
+        else
+        {
+            $data = array('upload_data' => $this->upload->data());
+
+            $this->User->editAttachment($id,$event,$config['file_name']);
+
+            $this->User->editFotoLomba($id,$fotolomba);
+
+            $data['sukses'] = "Form pendaftaran telah di upload";
+
+            if (isset($_SESSION['login'])){
+
+                $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
+                $this->load->view('user/profile/profile', $data);
+                $this->load->view('user/footer');
+
+            }else {
+
+                header('Location: ' . base_url('Home'));
+
+            }
+        }
+    }
+
+    public function do_upload7()
+    {
+
+        $event = $this->input->post('event');
+        $email = $this->input->post('email');
+        $linkcanvas = $this->input->post('linkcanvas');
+        $id = $this->input->post('id');
+
+        $num = rand(0,10000000);
+
+
+        $config['upload_path']          = './public/uploads/';
+        $config['allowed_types']        = 'pdf';
+        $config['max_size']             = 500;
+        $config['file_name']             = 'attachment_'.$event.'_'.$id.$num.'.pdf';
+
+        $this->load->library('upload', $config);
+
+        if ( ! $this->upload->do_upload('userfile'))
+        {
+            $data = array('error'.$event => $this->upload->display_errors());
+
+            if (isset($_SESSION['login'])){
+
+                $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
+                $this->load->view('user/profile/profile', $data);
+                $this->load->view('user/footer');
+
+            }else {
+
+                header('Location: ' . base_url('Home'));
+
+            }
+        }
+        else
+        {
+            $data = array('upload_data' => $this->upload->data());
+
+            $this->User->editAttachment($id,$event,$config['file_name']);
+
+            $this->User->editLinkCanvas($id,$linkcanvas);
+
+            $data['sukses'] = "Form pendaftaran telah di upload";
+
+            if (isset($_SESSION['login'])){
+
+                $data['user'] = $this->User->getByEmail($_SESSION['email']);
+                $data['gambar'] = $this->MGambarHome->getGambar();
+                $this->load->view('user/profile/profile', $data);
+                $this->load->view('user/footer');
+
+            }else {
+
+                header('Location: ' . base_url('Home'));
+
+            }
         }
     }
 }
