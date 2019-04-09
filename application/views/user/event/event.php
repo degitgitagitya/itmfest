@@ -71,7 +71,7 @@
                     </div>
 
                     <!-- Event -->
-                    <div class="event">
+                    <!-- <div class="event">
                         <div class="row row-lg-eq-height">
                             <div class="col-lg-6 event_col">
                                 <div class="event_image_container">
@@ -93,10 +93,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Event -->
-                    <div class="event">
+                    <!-- <div class="event">
                         <div class="row row-lg-eq-height">
                             <div class="col-lg-6 event_col">
                                 <div class="event_image_container">
@@ -118,10 +118,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Event -->
-                    <div class="event">
+                    <!-- <div class="event">
                         <div class="row row-lg-eq-height">
                             <div class="col-lg-6 event_col">
                                 <div class="event_image_container">
@@ -143,7 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
 

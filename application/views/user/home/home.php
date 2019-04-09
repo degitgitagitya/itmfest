@@ -213,7 +213,7 @@
                 </div>
             </div>
 
-            <div class="intro_item">
+            <!-- <div class="intro_item">
                 <div class="intro_image"><img src="<?php echo base_url() ?>public/banner/Cover-Song-Web.jpg" alt=""></div>
                 <div class="intro_body">
                     <div class="intro_title"><a href="<?php echo base_url('Event/eventDetailKompetisiPariwisata')?>">Pesona Indonesia Cover Song Competition</a></div>
@@ -232,7 +232,7 @@
                 <div class="intro_body">
                     <div class="intro_title"><a href="<?php echo base_url('Event/eventDetailPhoto')?>">Photography Competition</a></div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
